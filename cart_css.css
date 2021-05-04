@@ -40,7 +40,7 @@ textarea:focus, input:focus{
   margin: 0;
 }
 
-span {
+.cart {
   font-size: 11px;
   letter-spacing: 0.1em;
   text-align: right;
@@ -197,7 +197,13 @@ img {
   height: 23vw;
 }
 
-
+.instead {
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-bottom: 10vw;
+}
 
 .info {
   display: flex;
