@@ -197,13 +197,7 @@ img {
   height: 23vw;
 }
 
-section {
-  display: grid;
-  grid-template-columns: max-content auto max-content;
-  margin-left: 7vw;
-  margin-right: 7vw;
-  margin-bottom: 10vw;
-}
+
 
 .info {
   display: flex;
