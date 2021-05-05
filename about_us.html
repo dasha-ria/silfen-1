@@ -15,30 +15,42 @@
   <body>
     <header>
       <div id="navbar">
-        <section id="section-announcement" data-section-id="announcement" data-section-type="announcement-bar">
-            <div class="AnnouncementBar">
-                <div class="AnnouncementBar__Wrapper">
-                    <p class="AnnouncementBar__Content">
-                        <span>100% SUSTAINABLE PRODUCTION. ALWAYS.</span>
-                    </p>
-                </div>
+        <section
+          id="section-announcement"
+          data-section-id="announcement"
+          data-section-type="announcement-bar"
+        >
+          <div class="AnnouncementBar">
+            <div class="AnnouncementBar__Wrapper">
+              ß
+              <p class="AnnouncementBar__Content">
+                <span>100% SUSTAINABLE PRODUCTION. ALWAYS.</span>
+              </p>
             </div>
-       
-    
-        <nav id="navigation">
-            <input id="search" type="search" name="search" placeholder="SEARCH by name, color or collection" /> 
-        
-            <img class="logo" src="img/white-logo.svg" alt="logo">
-        <span>CART(0)</span>
-    <br>
-        <ul>
-            <li><a href="">SHOP</a></li>
-            <li><a href="">COLLECTIONS</a></li>
-            <li><a href="">NEW IN</a></li>
-            <li><a href="">ABOUT US</a></li>  
-        </ul>
-        </nav>
-    </section></div>
+          </div>
+
+          <nav id="navigation">
+            <input
+              id="search"
+              type="search"
+              name="search"
+              placeholder="SEARCH by name, color or collection"
+            />
+
+            <a href="index.html">
+              <img class="logo" src="img/white-logo.svg" alt="logo"
+            /></a>
+            <span>CART(0)</span>
+            <br />
+            <ul>
+              <li><a href="shop_all.html">SHOP</a></li>
+              <li><a href="collections.html">COLLECTIONS</a></li>
+              <li><a href="">NEW IN</a></li>
+              <li><a href="about_us.html">ABOUT US</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
     </header>
     <main>
       <h3>ABOUT US</h3>
@@ -98,19 +110,19 @@
             <a href="#" class="footer-link">Certification</a>
             <a href="#" class="footer-link">Contact us</a>
           </div>
-      
+
           <div class="footer-category">
             <h4 class="footer-title">HELP</h4>
             <a href="#" class="footer-link">Shipping & Delivery</a>
             <a href="#" class="footer-link">Privacy Policy</a>
           </div>
-      
+
           <div class="footer-category">
             <h4 class="footer-title">LEGAL</h4>
             <a href="#" class="footer-link">Terms & Conditions</a>
             <a href="#" class="footer-link">Privacy Policy</a>
           </div>
-      
+
           <div class="footer-category">
             <h4 class="footer-title">SOCIAL MEDIA</h4>
             <div class="footer-pic">
@@ -120,7 +132,7 @@
               <img src="img/linkedin.svg" class="footer-social" />
             </div>
           </div>
-      
+
           <div class="footer-category">
             <h4 class="footer-title">PAYMENT METHODS</h4>
             <div class="footer-pic">
@@ -131,7 +143,7 @@
             </div>
           </div>
         </div>
-      
+
         <p class="address-footer">
           Klareboderne 10, 1, DK-1115 København, <br />
           Phone: +45 20 51 89 23 l E-mail: info@silfenstudio.com <br />
@@ -141,22 +153,25 @@
 
       <script>
         /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-250px";
-  }
-  prevScrollpos = currentScrollPos;
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-250px";
+          }
+          prevScrollpos = currentScrollPos;
 
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 150) {
-    document.getElementById("navigation").className = "blurred";
-  } else {
-    document.getElementById("navigation").className = "";
-  }
-}
+          if (
+            document.body.scrollTop > 50 ||
+            document.documentElement.scrollTop > 150
+          ) {
+            document.getElementById("navigation").className = "blurred";
+          } else {
+            document.getElementById("navigation").className = "";
+          }
+        };
       </script>
     </main>
   </body>
